@@ -30,6 +30,8 @@
         {
             this.btnForm2 = new System.Windows.Forms.Button();
             this.btnForm2b = new System.Windows.Forms.Button();
+            this.txtPassata = new System.Windows.Forms.TextBox();
+            this.btnPassaTxt = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnForm2
@@ -52,16 +54,37 @@
             this.btnForm2b.UseVisualStyleBackColor = true;
             this.btnForm2b.Click += new System.EventHandler(this.btnForm2b_Click);
             // 
+            // txtPassata
+            // 
+            this.txtPassata.Location = new System.Drawing.Point(13, 42);
+            this.txtPassata.Name = "txtPassata";
+            this.txtPassata.Size = new System.Drawing.Size(100, 20);
+            this.txtPassata.TabIndex = 2;
+            // 
+            // btnPassaTxt
+            // 
+            this.btnPassaTxt.Location = new System.Drawing.Point(119, 42);
+            this.btnPassaTxt.Name = "btnPassaTxt";
+            this.btnPassaTxt.Size = new System.Drawing.Size(96, 23);
+            this.btnPassaTxt.TabIndex = 3;
+            this.btnPassaTxt.Text = "Passa TXT a F2";
+            this.btnPassaTxt.UseVisualStyleBackColor = true;
+            this.btnPassaTxt.Click += new System.EventHandler(this.btnPassaTxt_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnPassaTxt);
+            this.Controls.Add(this.txtPassata);
             this.Controls.Add(this.btnForm2b);
             this.Controls.Add(this.btnForm2);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -69,6 +92,8 @@
 
         private System.Windows.Forms.Button btnForm2;
         private System.Windows.Forms.Button btnForm2b;
+        private System.Windows.Forms.TextBox txtPassata;
+        private System.Windows.Forms.Button btnPassaTxt;
     }
 }
 
