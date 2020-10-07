@@ -46,5 +46,18 @@ namespace Multiform01
             f2b.Text = "Form 2 con parametro";
             f2b.Show();
         }
+
+        private void btnFormModale_Click(object sender, EventArgs e)
+        {
+            FormModale f = new FormModale();
+            if(f.ShowDialog()==DialogResult.OK)
+            {
+                MessageBox.Show("OK");
+                txtEtaFM.Text = f.eta;
+                txtNomeFM.Text = f.nome;
+            }
+            else
+                MessageBox.Show("Annulla");
+        }
     }
 }
